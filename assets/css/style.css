@@ -917,7 +917,7 @@ img {
   z-index: 10;
 }
 #mu-testimonial:after {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(119, 53, 53, 0.3);
   content: '';
   position: absolute;
   left: 0;
@@ -996,13 +996,14 @@ img {
   text-align: center;
 }
 #mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info h4 {
-  color: #fff;
+  color: black;
   font-size: 20px;
   margin-bottom: 0px;
 }
 #mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-info span {
   font-size: 14px;
   letter-spacing: 0.3px;
+  color: black;
 }
 #mu-testimonial .mu-testimonial-area .mu-testimonial-content .slick-dots li {
   background-color: #fff;
