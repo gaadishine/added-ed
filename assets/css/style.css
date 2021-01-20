@@ -587,14 +587,14 @@ img {
 
 /* #01bafd */
 #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single h4 {
-  color: black;
+  color: #fff;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 20px;
 }
 #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single p {
-  color: black;
+  color: #fff;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -906,7 +906,7 @@ img {
 ====================*/
 #mu-testimonial {
   background-attachment: fixed;
-  background-image: url("../img/courses/sktch.jpg");
+  background-image: url("../img/sktch.jpeg");
   background-position: center center;
   background-size: cover;
   display: inline;
