@@ -958,15 +958,16 @@ img {
   margin-bottom: 0;
   position: relative;
 }
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote:before {
-  content: '\f10d';
+/* '\f10d' */
+/* #mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote:before {
+  content: open-quote;
   color: #fff;
   font-family: fontAwesome;
   font-style: italic;
   left: 2%;
   position: absolute;
   top: 0;
-}
+} */
 #mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote p {
   color: #fff;
   font-size: 16px;
@@ -974,7 +975,18 @@ img {
   letter-spacing: 0.5px;
   line-height: 1.8;
   margin-bottom: 0;
+  display: inline;
 }
+/* #mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote:after {
+  content: close-quote;
+  color: #fff;
+  font-family: fontAwesome;
+  font-style: italic;
+  left: 2%;
+  position: absolute;
+  top: 0;
+} */
+
 #mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-img {
   display: inline;
   float: left;
