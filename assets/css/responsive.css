@@ -292,6 +292,7 @@
   }
 
   .header-navigation .container .menu-toggler {
+    font-size: 40px;
     float: left;
     margin: 28px 0;
     color: #81868a;
@@ -1046,5 +1047,172 @@
   .comment-one__content {
     padding-left: 0;
     margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .course-details-new{
+    padding-top: 0px;
+  }
+
+  .course-heading-sec{
+    padding-top: 0px;
+  }
+
+  .course-title-sec{
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .course-by{
+    font-size: 16px;
+  }
+
+  .course-title{
+    font-size: 37px;
+  }
+
+  .age-bar{
+    font-size: 18px;
+  }
+
+  .course-head-img{
+    padding-top: 0;
+    margin-left: -45px;
+    margin-top: -20px;
+  }
+
+  .course-head-img img{
+    width: 294px;
+    margin-left: 75px;
+  }
+
+  .course-video-sec{
+    border-radius: 0;
+  }
+
+  .video-title-sec{
+    padding-top: 20px;
+  }
+
+  .video-title-course-name{
+    font-size: 35px;
+  }
+
+  .video-popup-img a img{
+    width: 350px;
+  }
+
+  .course-video-sec{
+    padding-bottom: 55px;
+  }
+
+  .overview-sec{
+    margin-top: 0;
+  }
+
+  .overview-sec-content{
+    border-radius: 0;
+    padding-bottom: 40px;
+  }
+
+  .overview-title h2{
+    font-size: 30px;
+  }
+
+  .overview-img img{
+    width: 370px;
+  }
+
+  .overview-content p{
+    text-align: center;
+  }
+
+  .trial-class-btn{
+    text-align: center;
+  }
+
+  .aim-title h2{
+    font-size: 30px;
+  }
+
+  .aim-box{
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+  }
+
+  .course-price-title h2{
+    font-size: 30px;
+  }
+
+  .course-structure{
+    padding-top: 5px;
+  } 
+
+  .course-structure h2{
+    font-size: 30px;
+  }
+
+  .beginner{
+    background-color: #02bbbb;
+  }
+
+  .intermediate1{
+    background-color: #40c540;
+  }
+
+  .intermediate{
+    background-color: #dd5c5c;
+  }
+
+  .beginner-level-box{
+    border-radius: 0;
+  }
+
+  .level-1 p{
+    
+    font-size: 18px;
+    
+  }
+
+  .beginner-level-title h5{
+    font-size: 25px;
+  }
+
+  .intermediate-level-box{
+    border-radius: 0;
+  }
+
+  .intermediate1-level-box{
+    border-radius: 0;
+  }
+
+  .intermediate-level-title h5{
+    font-size: 25px;
+  }
+
+  .intermediate-level-content p{
+    font-size: 18px;
+  }
+
+  .advance-level-box{
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .advance-level-title h5{
+    font-size: 25px;
+  }
+
+  .advance-level-content p{
+    font-size: 18px;
+  }
+  .individual{
+    font-size: 27px;
+    padding: 0 10px;
+  }
+
+  .price-card{
+    margin-bottom: 20px;
   }
 }
