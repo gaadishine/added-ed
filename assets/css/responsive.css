@@ -1064,6 +1064,11 @@
     text-align: center;
   }
 
+  .course-title-sec-phonics {
+    padding-top: 5px;
+    text-align: center;
+}
+
   .course-by{
     font-size: 16px;
   }
