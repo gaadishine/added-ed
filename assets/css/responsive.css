@@ -1220,4 +1220,28 @@
   .price-card{
     margin-bottom: 20px;
   }
+
+  .phone1{
+    display: none;
+  }
+
+  .navbar-brand .main-logo{
+    width: 130px;
+  }
+
+  .fa-facebook-square{
+    font-size: 1em;
+  }
+  .fa-instagram{
+    font-size: 1em;
+  }
+  .fa-whatsapp{
+    font-size: 1em;
+  }
+  .header-navigation .container .menu-toggler{
+    margin-left: -15px;
+  }
+  .girl-img{
+    width: 340px;
+  }
 }
