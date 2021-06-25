@@ -1244,4 +1244,7 @@
   .girl-img{
     width: 340px;
   }
+  .topbar-one__right a, .topbar-one__left a{
+    font-size: 12px;
+  }
 }
