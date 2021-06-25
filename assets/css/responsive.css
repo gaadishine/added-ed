@@ -1247,4 +1247,8 @@
   .topbar-one__right a, .topbar-one__left a{
     font-size: 12px;
   }
+  .stricked-menu.stricky-fixed{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
