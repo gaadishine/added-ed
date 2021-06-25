@@ -400,18 +400,25 @@ After every class, 3 customized individual worksheets are provided to the child.
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="price-card">
-                            <div class="month-sec">
-                                <h5>1 Month</h5>
-                            </div>
-                            <div class="sessions-sec">
-                                <p>*Minimum Booking 10 Sessions</p>
-                            </div>
-                            <div class="price-sec">
-                                <p>9,000 INR</p>
-                            </div>
-                            <div class="buy-now-btn">
-                                <a href="#" class="trial-class-thm-btn buy-now">BUY NOW</a>
-                            </div>
+                            <form action="http://added-prod.us-east-1.elasticbeanstalk.com/signup/">
+                                <input type="hidden" name="course-name" value="Phonics & Reading" />
+                                <div class="month-sec">
+                                    <h5>1 Month</h5>
+                                    <input type="hidden" name="plan-type" value="individual-1-month" />
+                                </div>
+                                <div class="sessions-sec">
+                                    <p>*Minimum Booking 10 Sessions</p>
+                                </div>
+                                <div class="price-sec">
+                                    <p id="course ammount">9,000 INR</p>
+                                    <input id="course ammount" type="hidden" name="amount" value="9000" />
+                                    <input id="course currency" type="hidden" name="currency" value="INR" />
+                                    <!-- <input type="hidden" name="currency" value="USD" /> -->
+                                </div>
+                                <div class="buy-now-btn">
+                                    <button class="trial-class-thm-btn buy-now" type="submit">BUY NOW</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
@@ -624,11 +631,19 @@ After every class, 3 customized individual worksheets are provided to the child.
 
     <script>
         $(document).ready(function() {
+            fetch("http://added-prod.us-east-1.elasticbeanstalk.com/plans/")
+            .then( (response) => response.json())
+            .then((data)=> console.log(data))// output will be the required data
+.catch( (error) => console.log(error))
         $('#headerVideoLink').magnificPopup({
             type:'inline',
             midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
          });         
         });
+    </script>
+
+    <script>
+        console.log();
     </script>
 </body>
 
