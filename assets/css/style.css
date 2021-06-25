@@ -582,6 +582,8 @@ a:visited {
   padding-bottom: 18px;
 }
 .stricked-menu.stricky-fixed {
+  padding-top: 10px;
+    padding-bottom: 10px;
   opacity: 1;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
