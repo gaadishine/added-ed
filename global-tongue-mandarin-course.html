@@ -395,55 +395,8 @@ It is the third most spoken language and China being one of the largest economie
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="price-card">
-                            <div class="month-sec">
-                                <h5>1 Month</h5>
-                            </div>
-                            <div class="sessions-sec">
-                                <p>*Minimum booking 10 Sessions</p>
-                            </div>
-                            <div class="price-sec">
-                                <p>9,500 INR</p>
-                            </div>
-                            <div class="buy-now-btn">
-                                <a href="#" class="trial-class-thm-btn buy-now">BUY NOW</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="price-card">
-                            <div class="month-sec">
-                                <h5>3 Months</h5>
-                            </div>
-                            <div class="sessions-sec">
-                                <p>Minimum booking 30 Sessions</p>
-                            </div>
-                            <div class="price-sec">
-                                <p>27,300 INR</p>
-                            </div>
-                            <div class="buy-now-btn">
-                                <a href="#" class="trial-class-thm-btn buy-now">BUY NOW</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="price-card">
-                            <div class="month-sec">
-                                <h5>6 Months</h5>
-                            </div>
-                            <div class="sessions-sec">
-                                <p>Minimum booking 60 Sessions</p>
-                            </div>
-                            <div class="price-sec">
-                                <p>51,000 INR</p>
-                            </div>
-                            <div class="buy-now-btn">
-                                <a href="#" class="trial-class-thm-btn buy-now">BUY NOW</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="NPSform">
+                    
                 </div>
 
                 <!-- Group class price section -->
@@ -458,55 +411,8 @@ It is the third most spoken language and China being one of the largest economie
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="price-card">
-                            <div class="month-sec">
-                                <h5>1 Month</h5>
-                            </div>
-                            <div class="sessions-sec">
-                                <p>*8 Classes in a month <br> *2 Classes/week</p>
-                            </div>
-                            <div class="price-sec">
-                                <p>4,800 INR</p>
-                            </div>
-                            <div class="buy-now-btn">
-                                <a href="#" class="trial-class-thm-btn buy-now">BUY NOW</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="price-card">
-                            <div class="month-sec">
-                                <h5>3 Months</h5>
-                            </div>
-                            <div class="sessions-sec">
-                                <p>*24 Classes for 3 months <br> *2 Classes/week</p>
-                            </div>
-                            <div class="price-sec">
-                                <p>14,000 INR</p>
-                            </div>
-                            <div class="buy-now-btn">
-                                <a href="#" class="trial-class-thm-btn buy-now">BUY NOW</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="price-card">
-                            <div class="month-sec">
-                                <h5>6 Months</h5>
-                            </div>
-                            <div class="sessions-sec">
-                                <p>*48 Classes for 6 months <br> *2 Classes/week</p>
-                            </div>
-                            <div class="price-sec">
-                                <p>27,000 INR</p>
-                            </div>
-                            <div class="buy-now-btn">
-                                <a href="#" class="trial-class-thm-btn buy-now">BUY NOW</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="groupDiv">
+                    
                 </div>
             </div>
         </section>
@@ -628,6 +534,183 @@ It is the third most spoken language and China being one of the largest economie
          });         
         });
     </script>
+
+<script>
+    let individualData = null
+    let groupData = null
+    let apiData = null
+    let subjectName = encodeURIComponent("Mandrin")
+
+  async function getIndividualPlanData() {
+    let planIndividual = 0
+    let individualUrl = `http://added-prod.us-east-1.elasticbeanstalk.com/plans/?subjectName=${subjectName}&planType=${planIndividual}`
+    await fetch(individualUrl)
+      .then((response) => response.json())
+      .then((data) => individualData = data) // output will be the required data
+      return individualData
+  }
+
+  async function getGroupPlanData() {
+    let planGroup = 1
+    let groupUrl = `http://added-prod.us-east-1.elasticbeanstalk.com/plans/?subjectName=${subjectName}&planType=${planGroup}`
+    await fetch(groupUrl)
+      .then((response) => response.json())
+      .then((data) => groupData = data) // output will be the required data
+      return groupData
+  }
+
+  function getCountry() {
+    var counrtyTimeZoneMap = [
+      { timeZone: "Asia/Calcutta", country: "India", currency: "INR"},
+      { timeZone: "Asia/Dubai", country: "United Arab Emirates", currency: "AED"},
+      { timeZone: "Asia/Qatar", country: "Qatar", currency: "QAR"},
+      { timeZone: "Asia/Kuala_Lumpur", country: "Malaysia", currency: "MYR"},
+      { timeZone: "Asia/Kuching", country: "Malaysia", currency: "MYR"},
+      { timeZone: "Asia/Colombo", country: "Sri Lanka", currency: "LKR"},
+      { timeZone: "Asia/Singapore", country: "Singapore", currency: "SGD"},
+      { timeZone: "Asia/Hong_Kong", country: "Hong Kong", currency: "USD"},
+      { timeZone: "Europe", country: "Europe", currency: "EUR"},
+      { timeZone: "DEFAULT", country: "Default", currency: "USD"},
+    ];
+    var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    let obj = { timeZone: null, country: null, currency: null};
+    let obj1 = null
+    if (timeZone.substring(0, 6) == "Europe") {
+      obj.country = "Europe";
+      obj.currency = "EUR"
+    }
+    if (obj.country == null) {
+      obj1 = counrtyTimeZoneMap.find((o) => o.timeZone == timeZone);
+    }
+    if (!obj1) {
+      obj = counrtyTimeZoneMap[9]
+    } else {
+      obj = obj1
+    }
+    return obj
+  }
+
+  function setCoursePrice(countryObj, priceData, groupData) {
+    let divs = '';
+    let groupDivs = '';
+    let amount = null
+    let currency = countryObj.currency
+    priceData.then(function (data) {
+      for (let i = 0; i < data.length; i++) {        
+        amount = data[i][currency]
+        divs += `<div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="price-card">
+            <form
+              action="http://added-prod.us-east-1.elasticbeanstalk.com/signup/"
+            >
+              <input
+                type="hidden"
+                name="course-name"
+                value="Phonics & Reading"
+              />
+              <div class="month-sec">
+                <h5>${data[i].sessions_text}</h5>
+                <input
+                  type="hidden"
+                  name="plan-type"
+                  value="individual-1-month"
+                />
+              </div>
+              <div class="sessions-sec">
+                <p>*Minimum Booking ${data[i].no_of_sessions} Sessions</p>
+              </div>
+              <div class="price-sec">
+                <p id="course ammount">${currency} ${amount}</p>
+                <input
+                  id="course ammount"
+                  type="hidden"
+                  name="amount"
+                  value="${amount}"
+                />
+                <input
+                  id="course currency"
+                  type="hidden"
+                  name="currency"
+                  value="${currency}"
+                />
+              </div>
+              <div class="buy-now-btn">
+                <button class="trial-class-thm-btn buy-now" type="submit">
+                  BUY NOW
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>`
+      }
+      document.getElementById('NPSform').insertAdjacentHTML('afterbegin', divs);
+    })
+
+    groupData.then(function (data) {
+      for (let i = 0; i < data.length; i++) {        
+        amount = data[i][currency]
+        groupDivs += `<div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="price-card">
+            <form
+              action="http://added-prod.us-east-1.elasticbeanstalk.com/signup/"
+            >
+              <input
+                type="hidden"
+                name="course-name"
+                value="Phonics & Reading"
+              />
+              <div class="month-sec">
+                <h5>${data[i].sessions_text}</h5>
+                <input
+                  type="hidden"
+                  name="plan-type"
+                  value="individual-1-month"
+                />
+              </div>
+              <div class="sessions-sec">
+                <p>*Minimum Booking ${data[i].no_of_sessions} Sessions</p>
+              </div>
+              <div class="price-sec">
+                <p id="course ammount">${currency} ${amount}</p>
+                <input
+                  id="course ammount"
+                  type="hidden"
+                  name="amount"
+                  value="${amount}"
+                />
+                <input
+                  id="course currency"
+                  type="hidden"
+                  name="currency"
+                  value="${currency}"
+                />
+              </div>
+              <div class="buy-now-btn">
+                <button class="trial-class-thm-btn buy-now" type="submit">
+                  BUY NOW
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>`
+      }
+      document.getElementById('groupDiv').insertAdjacentHTML('afterbegin', groupDivs);
+    })
+
+  }
+
+  $(document).ready(function () {
+    let individualData = getIndividualPlanData();
+    let groupData = getGroupPlanData();
+    let countryObj = getCountry();
+    setCoursePrice(countryObj, individualData, groupData)
+
+    $("#headerVideoLink").magnificPopup({
+      type: "inline",
+      midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+  });
+</script>
 </body>
 
 </html>

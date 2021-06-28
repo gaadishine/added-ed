@@ -6905,6 +6905,14 @@ a:visited {
   font-size: large;
 }
 
-@media only screen and (max-width: 780px){
-  
+.fa-whatsapp{
+  color: #25D366;
+}
+
+.fa-instagram{
+  color: #fb0b2c;
+}
+
+.fa-facebook-square{
+  color: #154675;
 }
