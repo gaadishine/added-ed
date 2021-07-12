@@ -611,7 +611,7 @@ After every class, 3 customized individual worksheets are provided to the child.
 
   async function getIndividualPlanData() {
     let planIndividual = 0
-    let individualUrl = `http://added-prod.us-east-1.elasticbeanstalk.com/plans/?subjectName=${subjectName}&planType=${planIndividual}`
+    let individualUrl = `https://dashboard.add-ed.com/plans/?subjectName=${subjectName}&planType=${planIndividual}`
     await fetch(individualUrl)
       .then((response) => response.json())
       .then((data) => individualData = data) // output will be the required data
@@ -620,7 +620,7 @@ After every class, 3 customized individual worksheets are provided to the child.
 
   async function getGroupPlanData() {
     let planGroup = 1
-    let groupUrl = `http://added-prod.us-east-1.elasticbeanstalk.com/plans/?subjectName=${subjectName}&planType=${planGroup}`
+    let groupUrl = `https://dashboard.add-ed.com/plans/?subjectName=${subjectName}&planType=${planGroup}`
     await fetch(groupUrl)
       .then((response) => response.json())
       .then((data) => groupData = data) // output will be the required data
@@ -669,7 +669,7 @@ After every class, 3 customized individual worksheets are provided to the child.
         divs += `<div class="col-lg-6 col-md-6 col-sm-12">
           <div class="price-card">
             <form
-              action="http://added-prod.us-east-1.elasticbeanstalk.com/signup/"
+              action="https://dashboard.add-ed.com/signup/"
             >
               <input
                 type="hidden"
