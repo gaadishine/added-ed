@@ -38,9 +38,8 @@
                     <a href="tel:919654165165">+91 9654165165</a>
                 </div><!-- /.topbar-one__left -->
                 <div class="topbar-one__right">
-                    <a href="#" class="trial-class">Book a trial class</a>
-                    <a href="http://student.add-ed.com/" target="_blank">Login</a>
-                    <a href="http://add-ed-dev.us-east-1.elasticbeanstalk.com/signup/" target="_blank">Register</a>
+                    <a href="https://dashboard.add-ed.com/signup/?Trial=True" target="_blank" class="trial-class">Book a trial class</a>
+                    <a href="https://student.add-ed.com" target="_blank">Login</a>
                 </div><!-- /.topbar-one__right -->
             </div><!-- /.container -->
         </div><!-- /.topbar-one -->
@@ -49,16 +48,18 @@
                 <div class="container clearfix">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="logo-box clearfix">
+                        <a class="navbar-brand show-logo" href="/">
+                            <img src="assets/images/added-logo1.png" class="main-logo" width="160" alt="" />
+                        </a>
                         <button class="menu-toggler" data-target=".main-navigation">
                             <span class="kipso-icon-menu"></span>
                         </button>
-                        
                         <div class="header__social">
                             <a href="https://www.facebook.com/addedindia" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
                             <a href="https://www.instagram.com/added_india/?hl=en" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                             <a href="https://wa.link/9wwa36" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
                         </div><!-- /.header__social -->
-                        <a class="navbar-brand" href="/">
+                        <a class="navbar-brand hide-logo" href="/">
                             <img src="assets/images/added-logo1.png" class="main-logo" width="160" alt="" />
                         </a>
                     </div><!-- /.logo-box -->
@@ -81,7 +82,7 @@
                                 </ul> -->
                             </li>
                             <li>
-                                <a href="/#about" data-scroll style="scroll-behavior: smooth;">About</a>
+                                <a href="/#about">About</a>
                                 <!-- <ul class="sub-menu">
                                     <li><a href="about">About Page</a></li>
                                     <li><a href="gallery">Gallery</a></li>
@@ -180,11 +181,11 @@
                                 For kids aged 4-16 years 
                             </div>
                             <div class="trial-class-btn">
-                                <a href="#" class="trial-class-thm-btn">BOOK A TRIAL CLASS</a>
+                                <a href="https://dashboard.add-ed.com/signup/?Trial=True" target="_blank" class="trial-class-thm-btn">BOOK A TRIAL CLASS</a>
                             </div>
                             <div class="course-page-login">
                                 Alreday Registered?
-                                <a href=""><span class="course-page-login-btn">Login Now</span></a>
+                                <a href="https://student.add-ed.com" target="_blank"><span class="course-page-login-btn">Login Now</span></a>
                             </div>
                         </div>
                     </div>
@@ -670,7 +671,7 @@ After every class, 3 customized individual worksheets are provided to the child.
         divs += `<div class="col-lg-6 col-md-6 col-sm-12">
           <div class="price-card">
             <form
-              action="https://dashboard.add-ed.com/signup/"
+              action="https://dashboard.add-ed.com/signup/" method="POST"
             >
               <input
                 type="hidden"
@@ -721,7 +722,7 @@ After every class, 3 customized individual worksheets are provided to the child.
         groupDivs += `<div class="col-lg-6 col-md-6 col-sm-12">
           <div class="price-card">
             <form
-              action="http://added-prod.us-east-1.elasticbeanstalk.com/signup/"
+            action="https://dashboard.add-ed.com/signup/" method="POST"
             >
               <input
                 type="hidden"
