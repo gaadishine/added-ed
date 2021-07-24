@@ -6930,3 +6930,9 @@ a:visited {
     display: none;
   }
 }
+
+@media only screen and (min-width: 780px) and (max-width: 999px){
+  .hide-logo{
+    margin-right: 5px !important;
+  }
+}
