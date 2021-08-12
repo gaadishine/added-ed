@@ -182,7 +182,7 @@
                                 For kids aged 8-16 years 
                             </div>
                             <div class="trial-class-btn">
-                                <a href="https://dashboard.add-ed.com/signup/?Trial=True" target="_blank" class="trial-class-thm-btn">BOOK A TRIAL CLASS</a>
+                                <a href="https://dashboard.add-ed.com/signup/?Trial=True&Subject=Spin-a-Yarn" target="_blank" class="trial-class-thm-btn">BOOK A TRIAL CLASS</a>
                             </div>
                             <div class="course-page-login">
                                 Alreday Registered?
@@ -256,7 +256,7 @@
                                         <br>
                                     </p>
                                     <div class="trial-class-btn">
-                                        <a href="https://dashboard.add-ed.com/signup/?Trial=True" target="_blank" class="trial-class-thm-btn">BOOK A TRIAL CLASS</a>
+                                        <a href="https://dashboard.add-ed.com/signup/?Trial=True&Subject=Spin-a-Yarn" target="_blank" class="trial-class-thm-btn">BOOK A TRIAL CLASS</a>
                                     </div>
                                 </div>
                             </div>
@@ -606,14 +606,19 @@
               <input
                 type="hidden"
                 name="course-name"
-                value="Phonics & Reading"
+                value="Creative Writing"
               />
               <div class="month-sec">
                 <h5>${data[i].sessions_text}</h5>
                 <input
-                  type="hidden"
-                  name="plan-type"
-                  value="individual-1-month"
+                    type="hidden"
+                    name="plan-type"
+                    value="${data[i].plan_type}"
+                />
+                <input
+                    type="hidden"
+                    name="session-text"
+                    value="${data[i].sessions_text}"
                 />
               </div>
               <div class="sessions-sec">
@@ -657,14 +662,19 @@
               <input
                 type="hidden"
                 name="course-name"
-                value="Phonics & Reading"
+                value="Creative Writing"
               />
               <div class="month-sec">
                 <h5>${data[i].sessions_text}</h5>
                 <input
-                  type="hidden"
-                  name="plan-type"
-                  value="individual-1-month"
+                    type="hidden"
+                    name="plan-type"
+                    value="${data[i].plan_type}"
+                />
+                <input
+                    type="hidden"
+                    name="session-text"
+                    value="${data[i].sessions_text}"
                 />
               </div>
               <div class="sessions-sec">
