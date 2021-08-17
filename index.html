@@ -507,15 +507,19 @@
                         </div><!-- /.video-two__content -->
                     </div><!-- /.col-lg-7 -->
                     <div class="col-lg-5 d-flex justify-content-lg-end justify-content-sm-start">
-                        <div class="my-auto">
-                            <a href="#" data-toggle="modal" data-target="#video" class="video-two__popup lightbox-image"><i class="fa fa-play"></i><!-- /.fa fa-play --></a>
-                            <!-- /.video-two__popup -->
-                        </div><!-- /.my-auto -->
-                        <div class="modal fade" role="dialog" tabindex="-1" id="video">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <iframe width="900" height="400" src="https://www.youtube.com/embed/UVXVz_V54k4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-popup-sec">
+                            <div class="video-popup-img">
+                              <a href="#headerPopup" class="video-two__popup lightbox-image" id="headerVideoLink" target="_blank">
+                                <i class="fa fa-play"></i>
+                              </a>
                             </div>
-                        </div>
+                            <div
+                              id="headerPopup"
+                              class="mfp-hide embed-responsive embed-responsive-21by9"
+                            >
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UVXVz_V54k4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
                     </div><!-- /.col-lg-5 d-flex justify-content-end -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -799,7 +803,17 @@
     <!-- template scripts -->
     <script src="assets/js/theme.js"></script>
 
-    <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(185612)</script> 
+    <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(185612)</script>
+    
+    <script>
+        $(document).ready(function () {
+        $("#headerVideoLink").magnificPopup({
+          type: "inline",
+          midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+        });
+        
+    </script>
 </body>
 
 </html>
