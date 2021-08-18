@@ -2120,7 +2120,7 @@ a:visited {
 .cta-four {
   padding-top: 120px;
   padding-bottom: 472px;
-  background-image: url(../images/homepage2.png);
+  background-image: url(../images/homepage2.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -5788,7 +5788,7 @@ a:visited {
 .video-two {
   position: relative;
   padding: 120px 0;
-  background-image: url(../images/video-sec-banner.png);
+  background-image: url(../images/video-sec-banner.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
